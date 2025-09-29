@@ -71,8 +71,18 @@
         .contact-buttons-container {
             text-align: center;
             margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
         }
-        
+        .contact-buttons-container .call-group,
+        .contact-buttons-container .whatsapp-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         /* 5. القائمة الجانبية (Sidebar) */
         .sidebar {
             width: 250px;
@@ -178,7 +188,7 @@
             font-size: 0.95rem;
             font-weight: bold;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background-color 0.3s, transform 0.2s, color 0.3s;
             margin: 5px;
             display: inline-block;
             white-space: nowrap;
@@ -189,6 +199,7 @@
         }
         .mini-order-now:hover {
             background-color: #003a85;
+            color: white;
             transform: scale(1.05);
         }
         .mini-order-now.whatsapp:hover {
@@ -431,7 +442,6 @@
                 padding: 1px 3px; 
             }
             .mini-order-now { font-size: 0.9rem; padding: 7px 12px; }
-            .contact-buttons-container br.mobile-break { display: block; }
         }
         @media (min-width: 601px) {
             .contact-buttons-container br.mobile-break { display: none; }
@@ -492,7 +502,7 @@
                 <span style="color: #003a85;">الخيار المثالي للمنازل ذات الخزانات الصغيرة أو التي يصعب الوصول إليها!</span>
             </p>
             <p>
-                لماذا تختار وايت 6 طن؟
+                **لماذا تختار وايت 6 طن?**
                 <br>
                 إذا كنت تحتاج إلى كمية متوسطة من المياه، أو كان حيّك ضيقاً، يوفر لك وايت 6 طن الحل السريع والموثوق:
             </p>
@@ -515,7 +525,7 @@
                 <span style="color: #003a85;">الحل الأمثل للخزانات الكبيرة، المشاريع، والمطاعم التي تحتاج كميات ضخمة!</span>
             </p>
             <p>
-                ميزات وايت 18 طن:
+                **ميزات وايت 18 طن:**
                 <br>
                 للاحتياجات الكبيرة من المياه وضمان عدم انقطاع الإمداد، يوفر لك وايت 18 طن:
             </p>
@@ -574,11 +584,14 @@
             
             <div class="contact-buttons-container">
                 <h3 style="color:#0056b3;">اطلب وايت المياه الآن لنصلك فوراً!</h3>
-                <a href="tel:+966547708489" class="mini-order-now">📞 اتصال 6 طن</a>
-                <a href="https://wa.me/966547708489" target="_blank" class="mini-order-now whatsapp">💬 واتساب 6 طن</a>
-                <br class="mobile-break">
-                <a href="tel:+966560898767" class="mini-order-now">📞 اتصال 18 طن</a>
-                <a href="https://wa.me/966560898767" target="_blank" class="mini-order-now whatsapp">💬 واتساب 18 طن</a>
+                <div class="call-group">
+                    <a href="tel:+966547708489" class="mini-order-now">📞 اتصال 6 طن</a>
+                    <a href="tel:+966560898767" class="mini-order-now">📞 اتصال 18 طن</a>
+                </div>
+                <div class="whatsapp-group">
+                    <a href="https://wa.me/966547708489" target="_blank" class="mini-order-now whatsapp">💬 واتساب 6 طن</a>
+                    <a href="https://wa.me/966560898767" target="_blank" class="mini-order-now whatsapp">💬 واتساب 18 طن</a>
+                </div>
             </div>
         </div>
 
@@ -619,11 +632,14 @@
             <h2>تواصل معنا</h2>
             <p>يمكنك التواصل معنا على مدار الساعة للحجز أو الاستفسار عن أسرع وايت مياه:</p>
             <div class="contact-buttons-container">
-                <a href="tel:+966547708489" class="mini-order-now">📞 اتصال 6 طن</a>
-                <a href="https://wa.me/966547708489" target="_blank" class="mini-order-now whatsapp">💬 واتساب 6 طن</a>
-                <br class="mobile-break">
-                <a href="tel:+966560898767" class="mini-order-now">📞 اتصال 18 طن</a>
-                <a href="https://wa.me/966560898767" target="_blank" class="mini-order-now whatsapp">💬 واتساب 18 طن</a>
+                <div class="call-group">
+                    <a href="tel:+966547708489" class="mini-order-now">📞 اتصال 6 طن</a>
+                    <a href="tel:+966560898767" class="mini-order-now">📞 اتصال 18 طن</a>
+                </div>
+                <div class="whatsapp-group">
+                    <a href="https://wa.me/966547708489" target="_blank" class="mini-order-now whatsapp">💬 واتساب 6 طن</a>
+                    <a href="https://wa.me/966560898767" target="_blank" class="mini-order-now whatsapp">💬 واتساب 18 طن</a>
+                </div>
             </div>
         </div>
 
